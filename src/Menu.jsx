@@ -7,8 +7,8 @@ const Menu = () => {
   return (
     <div className='bg-orange-200 py-10 px-4 min-h-screen mt-6'>
         <h1 className="text-6xl text-center text-orange-800 font-bold">Menu of Aroma</h1>
-        <div className='bg-white rounded-2xl w-250 ml-50'>
-        <div className='flex flex-row items-center justify-center mt-5 gap-6'>
+        <div className='bg-white rounded-2xl max-w-4xl mx-auto p-6'>
+        <div className='flex flex-col md:flex-row items-center justify-center mt-5 gap-6'>
             <div>
                 <h1 className="text-4xl  text-orange-800 font-bold">Cakes</h1>
                 <p className='mt-2 text-2xl'>Cheese Cake - $20.00</p>
@@ -21,12 +21,12 @@ const Menu = () => {
                 <p>A vanilla cake is very special in our bakery and is made with the finest ingredients.</p>
             </div>
             <div>
-                <img src={c} alt="Cheese Cake" className="w-80 h-80"/>
+                <img src={c} alt="Cheese Cake" className="w-full md:w-80 h-auto md:h-80 rounded-lg"/>
             </div>
         </div>
-        <div className='flex flex-row items-center justify-center mt-5 gap-6'>
+        <div className='flex flex-col md:flex-row  items-center justify-center mt-5 gap-6'>
             <div>
-                <img src={r} alt="Cheese Cake" className="w-80 h-80"/>
+                <img src={r} alt="Cheese Cake" className="w-full md:w-80 h-auto md:h-80 rounded-lg"/>
             </div> 
             <div>
                 <h1 className="text-4xl  text-orange-800 font-bold">DONUTS</h1>
@@ -41,7 +41,7 @@ const Menu = () => {
             </div>
            
         </div>
-        <div className='flex flex-row items-center justify-center  gap-6'>
+        <div className='flex flex-col md:flex-row items-center justify-center  gap-6'>
             <div>
                 <h1 className="text-4xl  text-orange-800 font-bold">ICE CREAMS</h1>
                 <p className='mt-2 text-2xl'>Vanilla Ice Cream - $3.00</p>
@@ -54,7 +54,7 @@ const Menu = () => {
                 <p>A cool mint ice cream with delicious chocolate chips.</p>
             </div>
             <div>
-                <img src={cc} alt="Cheese Cake" className="w-100 h-100"/>
+                <img src={cc} alt="Cheese Cake" className="w-full md:w-80 h-auto md:h-80 rounded-lg"/>
             </div>
         </div>
         <button className='bg-orange-800 text-white px-6 py-2 rounded-lg mt-6 hover:bg-orange-700 transition duration-300 items-center justify-center flex mx-auto'>
